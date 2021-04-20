@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Learn  <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
@@ -63,3 +63,12 @@ export default function Home() {
     </div>
   )
 }
+
+export async function getServerSideProps() {
+  // const res = await fetch('http://localhost:3000/api/posts')
+  // const posts = await res.json()
+  return {
+    props: {}
+  }
+}
+
